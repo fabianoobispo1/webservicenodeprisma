@@ -18,7 +18,7 @@ app.get("/todos", async (req, res) => {
   res.json(todos);
 });
 
-app.post("/todos", async (req, res) => {
+/* app.post("/todos", async (req, res) => {
   const todo = await prisma.todo.create({
     data: {
       completed: false,
@@ -28,7 +28,7 @@ app.post("/todos", async (req, res) => {
   });
 
   return res.json(todo);
-});
+}); */
 
 app.get("/todos/:id", async (req, res) => {
   const id = req.params.id;
