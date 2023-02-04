@@ -185,7 +185,7 @@ export async function appRoutes(app:FastifyInstance) {
         const video = video_link.split('=')
 
         const test = video[1]
-        return title
+        
   
         await prisma.exercise.create({
             data: {
